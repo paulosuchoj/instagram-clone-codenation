@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body{
+	background: #EEEEEE;
+	max-width: 620px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	place-content: center;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+a, a:visited, a:active{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+header{
+	max-width: 620px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	background: #EEEEEE;
+}
+
+.instagram__header{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+
+.header__logo{
+	font-size: 1.8em;
+	width: 100%;
+	height: auto;
+	padding: 5px 10px;
+}
+
+.header__glyph{
+	width: 100%;
+	max-height: 1.8em;
+}
+
+.instagram__actions{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	height: auto;
+}
+
+.actions__icon{
+	height: 26px;
+	width: auto;
+	margin: 0 10px;
+}
+
+.stories{
+	display: flex;
+	padding: 70px 5px 5px 5px;
+	overflow-x: auto;
+	max-width: 620px;
+	margin: 15px 0;
+}
+
+.stories__item{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+
+.story__pic{
+	width: 70px;
+	height: auto;
+	border-radius: 100%;
+	padding: 2px;
+}
+
+.story__pic--new{
+	border: 2px solid rgb(249, 138, 138);
+}
+
+.feed{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 5px 0;
+}
+
+.post{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.post__header{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	width: 100%;
+	padding: 0 10px;
+}
+
+.post__user{
+	display: flex;
+	width: 100%;
+}
+
+.post__profilepic{
+	width: 4em;
+	height: 100%;
+	border-radius: 50%;
+	margin: 0 10px 0 0;
+}
+
+.post__username{
+	font-weight: bold;
+	font-size: 1.1em;
+	align-self: center;
+}
+
+.post__header span{
+	font-weight: bold;
+	font-size: 1.6em;
+	float: right;
+}
+
+.post__picture{
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.post__actions{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.post__love, .post__comment, .post__share, .post__save{
+	font-size: 1.6em;
+	margin: 6px 8px;
+}
+
+.post__love:hover{
+	color: crimson;
+}
+
+.post__save{
+	align-self: flex-end;
+}
+
+.post__save:hover{
+	color: darkblue;
+}
+
+.post__content{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+}
+
+.post__content .post__username{
+	padding-left: 10px;
+}
+
+.Post__hashtag{
+	color: blue;
+	padding-left: 6px;
+}
+
+.post__comments{
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+}
+
+.post__comments .post__profilepic{
+	width: 3.6em;
+}
+
+.comment{
+	color: #a0a0a0;
+}
+
+.post__datetime{
+	text-transform: uppercase;
+	font-size: 0.6em;
+	padding: 8px 10px;
+}
